@@ -1,0 +1,12 @@
+.statistic {
+    padding-top: 10px;
+
+}
+.statistic * {
+    padding-bottom: 5px;
+}
+
+.statistic-header {
+    font-weight: bold;
+    font-size: 18px;
+}

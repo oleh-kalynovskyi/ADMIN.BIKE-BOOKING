@@ -1,38 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Saira;
+  }
+body, html {    
+  width: 100%;
+  height: 100%;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
 .App {
-  text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-panel {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  padding: 4px 16px;
+
+  background-color: rgba(105, 105, 105, 1);
+}
+.top-panel-text {
+  width: 1124px;
+  padding: 0px 10px;
+  
+  font-size: 24px;
+  font-family: Saira Stencil One;
+  color: rgba(232, 232, 232, 1);
 }
 
-.App-link {
-  color: #61dafb;
-}
+.bottom-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: rgba(105, 105, 105, 1);
+}
+.bottom-panel-text {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 1124px;
+
+  font-family: Saira;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+}
+.bottom-panel-text span {
+  color: #CBCACA;
 }

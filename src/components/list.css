@@ -1,0 +1,75 @@
+.bike-list {
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid rgba(196, 196, 196, 1);
+    padding: 9px 9px 0 12px;
+}
+
+select {
+    border: none;
+    outline: none;
+    background: #E8E8E8;
+}
+
+.bikes-wrapper {
+    display: flex;
+    background: rgb(232, 232, 232);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 12px 12px 12px 18px;
+    max-width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.available {
+    border: 2px solid rgba(111, 207, 151, 1);
+}
+.busy {
+    border: 2px solid rgba(242, 153, 74, 1);
+}
+.unavailable {
+    border:  2px solid rgba(172, 86, 86, 0.5);
+}
+
+.unavailable .bike-wrapper-left > *:not( .bikes-wrapper-status ) {
+    opacity: 0.5;
+}
+.unavailable .bike-wrapper-right {
+    opacity: 0.5;
+}
+
+.bike-wrapper-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bike-wrapper-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.bikes-wrapper-name {
+    font-size: 14px;
+}
+.bikes-wrapper-slug {
+    font-size: 8px;
+    line-height: 13px;
+}
+.bikes-wrapper-status select {
+    cursor: pointer;
+}
+.bikes-wrapper-price {
+    font-size: 24px;
+}
+
+.bnt {
+    width: 20px;
+    height: 20px;
+
+    cursor: pointer;
+}
+
+
